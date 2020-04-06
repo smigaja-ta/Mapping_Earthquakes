@@ -19,7 +19,14 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
 
 streets.addTo(map);
 
-L.circleMarker([34.0522, -118.2437], 
-          { radius: 300,
-            color: "black" }
-        ).addTo(map);
+// Loop through the cities array and create one marker for each city.
+cities.forEach(function(city) {
+  console.log(city);
+  L.circleMarker(city.location,{
+      radius: city.population/100000
+    })
+    .bindPopup("<h2>" + city.city + ", " + city.state + "</h2> <hr> <h3>Population " 
+                + city.population.toLocaleString() + "</h3>" 
+                + "<hr><h3>"+city.state+"</h3>")
+    .addTo(map)
+ });

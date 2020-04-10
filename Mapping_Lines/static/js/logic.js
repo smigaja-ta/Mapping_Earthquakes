@@ -36,6 +36,23 @@ L.polyline(line, {
   dashOffset: '0'
 }).addTo(map);
 
+line = [
+  [31.1, -118.4085],
+  [37.6213, -1.3790],
+  [40.7899, -1.9791],
+  [47.4502, -122.3088]
+];
+
+// Create a polyline using the line coordinates and make the line black.
+line = L.polyline(line, {
+  color: "blue",
+  dashArray: "4 12 10",
+  dashOffset: '0'
+}).addTo(map);
+
+
+
+
 
 // Loop through the cities array and create one marker for each city.
 /* cities.forEach(function(city) {

@@ -1,0 +1,55 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "properties": {
+        "myName": "A Point!",
+        "aDemographic": 100,
+        "aGeographic": "Forest"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-96.1083984375, 41.31082388091818]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "myName": "A Line!",
+        "aDemographic": 100,
+        "aGeographic": "Plains"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-98.173828125, 44.02442151965934],
+          [-100.107421875, 41.21172151054787]
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "myName": "A Polygon!",
+        "aDemographic": 50,
+        "aGeographic": "Mountain"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-94.0869140625, 43.61221676817573],
+            [-93.55957031249999, 41.705728515237524],
+            [-91.14257812499999, 43.100982876188546],
+            [-94.0869140625, 43.61221676817573]
+          ]
+        ]
+      }
+    }
+    
+  ]
+}
